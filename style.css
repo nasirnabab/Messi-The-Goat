@@ -1,0 +1,325 @@
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+nav.sticky {
+  padding: 15px 20px;
+
+  text-shadow: 8px 8px 10px #0000008c;
+  background-color: #343a40;
+  /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #272c30, #27282b, #211f22, #151314, #000000);
+    */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #ffffff;
+}
+nav.sticky .logo a {
+  color: #fff;
+}
+.nav-content .nav-links {
+  display: flex;
+}
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #c8d7df;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #4070f4;
+}
+nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+nav.sticky .nav-links li a:hover {
+  color: #0e2431;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/bac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+  animation: messi 10s  2s infinite step-end both;
+}
+@keyframes messi {
+  0%{
+    background-image: url("images/bac.jpg");
+  }
+  20%{
+    background-image: url("images/bac.webp");
+  }
+  40%{
+    background-image: url("images/bac3.webp");
+  }
+  60%{
+    background-image: url("images/bac4.webp");
+  }
+  80%{
+    background-image: url("images/bac6.webp");
+  }
+  100%{
+    background-image: url("images/bac7.webp");
+  }
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 6px;
+  color: #f76c0f;
+}
+.text {
+  text-align: justify;
+  padding: 40px 80px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+.header-text {
+  padding-top: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 30%;
+  padding: 10vmin;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#personal p {
+  color: black;
+  font-weight: 300;
+  line-height: 1.5;
+}
+#personal,
+#gallery {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/bac.jpg"); /* Add the path to your background image */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#achievements {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/bac2.jpg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+section div h2 {
+  color: #ffa500; /* Orange text color */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #f4eeea 70%, rgb(57, 57, 57) 30%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* nasir */
+/* .first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 130px 0;
+}
+.first > div {
+  width: 30%;
+}
+.leftsection {
+  font-size: 3rem;
+  color: hsl(240, 100%, 25%);
+}
+
+.rightsection img {
+  width: 80%;
+  height: 500px;
+}
+.purple {
+  color: hsl(240, 0%, 25%);
+  margin: 50px 0px;
+}
+.change-content::after {
+  content: "";
+  animation: changetext 5s infinite steps(5, end);
+  color: #ffffff;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Senior officer in ISRO";
+  }
+
+  50% {
+    content: "Aerospace Scientist.";
+  }
+
+  100% {
+    content: "Padma Bhushan Winner";
+  }
+}
+.first .leftsection h2 {
+  color: black;
+} */
+#rocketry .poster {
+  height: 206px;
+  width: auto;
+}
+#rocketry p {
+  padding: 0 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+#rocketry h2 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 30px;
+}
+#personal p{
+    color: white;
+}
+#contribution {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 206px;
+  border: 5px solid rgb(77, 27, 27);
+}
+#career {
+  padding: 40px 80px;
+  line-height: 1.5;
+}
+
+#space {
+  line-height: 1.5;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
